@@ -1,0 +1,1 @@
+This folder is the CGC Labs static website project. All agent instructions live in `CLAUDE.md` in this same folder, and the library-level rules in `../CLAUDE.md` apply here. This file is a pointer only.
