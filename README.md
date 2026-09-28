@@ -13,6 +13,8 @@ Static multi-page site: home, plus one page per practice (Healthcare Analytics, 
 ## Preview
 Open `index.html` in a browser, or run `python -m http.server 8000` here and visit http://localhost:8000.
 
+Live: https://ccallahan308.github.io/cgclabs-website/ (GitHub Pages, branch main, root). Repo: https://github.com/CCallahan308/cgclabs-website
+
 ## Deploy
 Any static host: Vercel (preset "Other", output dir `.`), Netlify Drop (drag the folder), or GitHub Pages.
 
