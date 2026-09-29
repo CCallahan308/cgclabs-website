@@ -9,6 +9,7 @@ The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, bra
 - `index.html`, `analytics.html`, `website.html`, `data-engineering.html`: pages
 - `assets/style.css`: all design tokens and components (mirror of Theme Bible section 3)
 - `assets/site.js`: mobile nav drawer, nav solid-on-scroll, metric count-up
+- `assets/bg.js`: living ledger background (drifting dot field, hairline connections, pointer repulsion; static frame under prefers-reduced-motion; see DECISIONS.md #14)
 - `assets/favicon.svg`
 
 ## Conventions

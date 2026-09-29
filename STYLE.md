@@ -14,6 +14,7 @@ Source Serif 4 (display/headings) · Inter (body/UI) · JetBrains Mono (all nume
 - **Meta chips** `.hero-meta span`: mono 12px in Stone hairline boxes.
 - **Statement quote** `.pull-quote`: Vellum panel, 3px Brick left border, serif italic up to 28px.
 - **Index annotations** `.num`/`.idx`: parenthesized mono indices "(01)" on cards, steps, blocks, index rows.
+- **Living ledger field** `.bg-field`: fixed full-viewport canvas behind all content (`assets/bg.js`, no dependencies). Sparse dot grid on the paper layer: Ash dots at 85%, Slate at 60% for variety, exactly three Brick dots per viewport; hairline connective lines between near neighbors fade with distance. Dots drift slowly and part gently around the cursor (max 10px, fine-pointer devices only). Rendered as one static frame under prefers-reduced-motion; pauses on hidden tabs; DPR capped at 2. See DECISIONS.md #14 for the animated-background exception.
 
 ## Rules
 - Sharp corners: 4px buttons, 4-6px cards, 2px inputs/chips, 0 on tables/rules.
@@ -22,4 +23,4 @@ Source Serif 4 (display/headings) · Inter (body/UI) · JetBrains Mono (all nume
 - Motion: 150-250ms ease-out; count-up 800ms once; everything gated by prefers-reduced-motion.
 - No gradients, no glassmorphism, no stock photography, no icons beyond line SVG and text arrows.
 - Nav: sticky, transparent to Paper after 80px scroll; active link gets Brick underline + aria-current.
-- Stylesheet loads with a version query (`style.css?v=YYYYMMDD`); bump it on any CSS change so visitors and Vercel never see stale styles.
+- Stylesheet and scripts load with version queries (`style.css?v=YYYYMMDD`, `bg.js?v=N`); bump on any change so visitors and Vercel never see stale assets.

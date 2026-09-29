@@ -119,6 +119,9 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; }
 
 .hairline { height: 1px; background: var(--stone); border: 0; }
 
+/* ---------- Living ledger field ---------- */
+.bg-field { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
+
 /* ---------- Nav ---------- */
 .nav {
   position: sticky; top: 0; z-index: 30;

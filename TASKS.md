@@ -29,3 +29,8 @@ TASKS boxes checked, TESTING table run and shown to the user, README handoff wri
 - [x] Email domain swapped to cgclabs.org on all surfaces
 - [x] Vertical spacing tightened (sections, hero, CTA wall, index rows, footer, nav)
 - [x] privacy.html and cookies.html written and linked site-wide
+
+## Living background pass (2026-09-29)
+- [x] assets/bg.js: drifting ledger dot field, hairline connections, three Brick accents, pointer repulsion (user options 1+4)
+- [x] Canvas + script added to all six pages; stylesheet pinned at v=20260929-3
+- [x] Verified: drift (canvas checksum moves), reduced-motion static frame, repulsion (near-pointer region changes 8.7x control), mobile 390px, no console errors
