@@ -15,7 +15,7 @@ The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, bra
 - Copy: first person, founder-voiced, short sentences. No hype words, no emojis, no em dashes in any new copy.
 - Verified proof points only (see `../CLAUDE.md` #4). Prior employer stays "a rural Critical Access Hospital in the Midwestern US."
 - Prices: only the locked numbers on `analytics.html` ($8,500 diagnostic, $15,000/mo). No prices on other pages.
-- Sharp corners (2-6px), Brick 70 accent at most 3 uses per page, numbers in JetBrains Mono with tabular figures.
+- Sharp corners (2-6px), numbers in JetBrains Mono with tabular figures. One full-bleed Brick CTA band per page (the closing wall) is the sanctioned Brick fill; otherwise Brick stays an emphasis ink.
 
 ## Commands
 - Preview: open any page in a browser, or `python -m http.server` in this folder.

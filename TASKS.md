@@ -18,3 +18,9 @@ Build the three-practice static site per user directive: analytics, websites, da
 
 ## Definition of done
 TASKS boxes checked, TESTING table run and shown to the user, README handoff written.
+
+## Redesign pass (2026-09-29)
+- [x] Dribbble references viewed (museum / OneText / Longevity)
+- [x] Index list replaces practice cards on home; brick CTA wall + ghost watermark on all four pages
+- [x] Hero panel offset sheets, meta chips, statement quote, type scale up
+- [x] TESTING.md greps 1-6 pass; desktop + mobile renders verified
