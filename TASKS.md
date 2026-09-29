@@ -24,3 +24,8 @@ TASKS boxes checked, TESTING table run and shown to the user, README handoff wri
 - [x] Index list replaces practice cards on home; brick CTA wall + ghost watermark on all four pages
 - [x] Hero panel offset sheets, meta chips, statement quote, type scale up
 - [x] TESTING.md greps 1-6 pass; desktop + mobile renders verified
+
+## Follow-up pass (2026-09-29)
+- [x] Email domain swapped to cgclabs.org on all surfaces
+- [x] Vertical spacing tightened (sections, hero, CTA wall, index rows, footer, nav)
+- [x] privacy.html and cookies.html written and linked site-wide
