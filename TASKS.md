@@ -71,3 +71,18 @@ Both JavaScript files pass `node --check`. `git diff --check` passes. No build s
 - [x] Deploy `54b3059` through main; confirm production success.
 
 At a 714px viewport, the homepage decreased from 5,404px to 2,766px. Review artifacts: workspace `../tmp/short-site-review/`, including 18 full-page screenshots and `responsive-results.json`. Motion code was unchanged; reduced-motion emulation was not run.
+
+## Broad positioning and SEO (2026-10-20)
+
+- [x] Address organizations of every size on the homepage and data engineering page.
+- [x] Broaden analytics copy and metadata to business analytics; retain hospital context only as prior-work evidence.
+- [x] Preserve existing outcome figures, pricing terms, bookmarks, design, and compact page structure. Main copy totals 1,058 words.
+- [x] Add unique metadata, clean canonical/social/internal URLs, organization/service/breadcrumb data, a logo, robots.txt, and a six-page sitemap.
+- [x] Pass 11 automated SEO checks, 135 local link/resource/anchor checks, HTML structure, navigation, copy, proof, pricing, JavaScript syntax, and diff checks.
+- [x] Publish `a2caecab3e9b1a5542950ff08eb1598590c503a3` through main. Production deployment `7205817737` succeeded for that commit.
+- [x] Compare six live pages and six assets/crawl files against source. All returned direct HTTP 200. Five legacy .html routes returned 308 to the matching clean route.
+- [x] Check all six pages at 375px, 768px, and 1280px. Each has one h1; no horizontal overflow or clipped text was detected. Review mobile and desktop viewport screenshots.
+- [x] Check mobile menu navigation from home to data engineering and Escape-to-close. No browser console errors captured.
+- [x] Document owner steps for Search Console verification and sitemap submission. Neither was completed through Search Console; the browser was signed out.
+
+Review files are in `../tmp/seo-site-review/`: 18 viewport screenshots, responsive measurements, production responses, and interaction results. Full-page screenshot capture failed, so viewport captures were used with document-wide layout measurements. CSS and motion scripts were unchanged; reduced-motion emulation was not rerun. The audit also found that www.cgclabs.org did not resolve; RUNBOOK.md records the domain-owner follow-up.
