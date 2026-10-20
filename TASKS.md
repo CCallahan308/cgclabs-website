@@ -34,3 +34,27 @@ TASKS boxes checked, TESTING table run and shown to the user, README handoff wri
 - [x] assets/bg.js: drifting ledger dot field, hairline connections, three Brick accents, pointer repulsion (user options 1+4)
 - [x] Canvas + script added to all six pages; stylesheet pinned at v=20260929-3
 - [x] Verified: drift (canvas checksum moves), reduced-motion static frame, repulsion (near-pointer region changes 8.7x control), mobile 390px, no console errors
+
+## Data engineering focus (2026-10-19)
+
+- [x] Confirm source: six live HTML pages and three shared assets match repository HEAD `1e15a9e` before editing.
+- [x] Lead with data engineering on the homepage and dedicated service page.
+- [x] Put data engineering first in desktop/mobile navigation and footers on all six pages.
+- [x] Update search/social metadata and homepage structured description.
+- [x] Preserve the design, existing proof points, contact address, and analytics pricing.
+- [x] Review the source diff and run static checks.
+- [ ] Verify rendered layouts at 375px, 768px, and 1280px, plus interactive accessibility. Browser policy blocked local preview access.
+- [ ] Deploy the revision after release verification.
+
+| TESTING.md check | Observed result |
+| --- | --- |
+| 1. Banned words | Pass on all six HTML pages. |
+| 2. Dash punctuation | Pass on edited HTML; no new en/em dashes in the diff. |
+| 3. Proof points | Reviewed. Homepage and data engineering counters use existing 200+, 4 years, and zero missed deadlines. No new outcome numbers. |
+| 4. Pricing | Pass. Analytics pricing section is unchanged; no numeric currency amounts on other pages. |
+| 5. Employer/location | Pass. Employer stays anonymous; prohibited location is absent. |
+| 6. Internal links | Pass. All 156 local links, resources, and anchors resolve. |
+| 7. Desktop/mobile visual review | Pending. Browser policy blocked preview access. |
+| 8. Accessibility | Static checks pass: one h1 per page, skip links, unique IDs, and active navigation. Keyboard, drawer, and reduced-motion behavior remain unverified. |
+
+Both JavaScript files pass `node --check`. `git diff --check` passes. No build step exists for this static site. Local HTTP readiness requests timed out; HTTP serving was not verified.

@@ -1,13 +1,13 @@
 # ARCHITECTURE: cgclabs-website
 
 ## System fit
-One of four sibling site projects in the CGC Labs library (with `measuremap-marketing-site`, `portfolio-website`, and the published cgclabs.org). This one is the practice site: home plus three customer-facing service pages.
+One of four sibling site projects in the CGC Labs library (with `measuremap-marketing-site`, `portfolio-website`, and the published cgclabs.org). This one is the practice site: a data engineering homepage plus three customer-facing service pages.
 
-- **Pages:** `index.html` (router to three practices, proof, method, contact) · `analytics.html` (healthcare BI, Lane A + Lane B) · `website.html` (storefronts for independent retailers) · `data-engineering.html` (legacy data ETL/classification for ML/AI).
+- **Pages:** `index.html` (data engineering offer, operating experience, secondary services, method, contact) · `analytics.html` (healthcare BI, Lane A + Lane B) · `website.html` (storefronts for independent retailers) · `data-engineering.html` (legacy data extraction, quality checks, analytics and ML/AI datasets, pipelines, lineage, and handoff).
 - **Stack:** static HTML5, one shared stylesheet, one small vanilla JS file. No framework, no package manager, no build step. Deliberate choice; see DECISIONS.md.
 - **Design source:** Website Theme Bible (tokens, type scale, components). Implemented by hand in `assets/style.css`.
 - **Fonts:** Google Fonts via `<link>` (Theme Bible §8.3 Option B, the blessed static-deploy path).
-- **Contact:** `mailto:christian.g.callahan@cgclabs.io`. No form backend, no Calendly URL available yet [to fill if a Calendly link is added].
+- **Contact:** `mailto:christian.g.callahan@cgclabs.org`. No form backend, no Calendly URL available yet [to fill if a Calendly link is added].
 
 ## Boundaries
 - Copy and claims are governed by the library `../CLAUDE.md` non-negotiables. This repo's code never overrides those.
