@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data Engineering for Legacy Systems, Analytics and AI | CGC Labs</title>
-<meta name="description" content="Legacy data extraction, cleaning, quality checks, and scheduled pipelines. Documented datasets for analytics, machine learning, and AI, with code and runbooks you own.">
+<title>Data Engineering | CGC Labs</title>
+<meta name="description" content="Legacy extraction, quality checks, and pipelines for analytics and AI. Documented code and handoff.">
 <link rel="canonical" href="https://cgclabs.org/data-engineering.html">
-<meta property="og:title" content="Data Engineering for Legacy Systems, Analytics and AI | CGC Labs">
-<meta property="og:description" content="Old data, made usable. Extraction, quality checks, and documented pipelines for analytics, machine learning, and AI.">
+<meta property="og:title" content="Data Engineering | CGC Labs">
+<meta property="og:description" content="Legacy extraction, quality checks, and pipelines for analytics and AI. Documented code and handoff.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cgclabs.org/data-engineering.html">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261019-1">
+<link rel="stylesheet" href="assets/style.css?v=20261020-1">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -28,7 +28,7 @@
       <li><a href="analytics.html">Analytics</a></li>
       <li><a href="website.html">Websites</a></li>
     </ul>
-    <a class="btn btn-primary nav-cta" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a 20-min call</a>
+    <a class="btn btn-primary nav-cta" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call</a>
     <button class="hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -47,107 +47,71 @@
     <li><a href="website.html">Websites</a></li>
   </ul>
   <div class="drawer-cta">
-    <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a 20-min call</a>
+    <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call</a>
   </div>
 </aside>
 
 <main id="main">
-
-  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <div class="prose prose--hero">
         <span class="overline reveal">Primary practice &middot; Data engineering</span>
         <h1 class="h1 reveal reveal--1">Old data, made usable.</h1>
-        <p class="body-lg reveal reveal--2">I extract data from legacy systems, databases, and exports, then clean and structure it for the work ahead. You get usable datasets and documented pipelines for analytics, machine learning, and AI.</p>
+        <p class="body-lg reveal reveal--2">Clean datasets and documented pipelines from your legacy systems, ready for analytics, machine learning, and AI.</p>
         <div class="hero-ctas reveal reveal--3">
-          <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a 20-min call <span class="arr">&rarr;</span></a>
-          <a class="btn btn-ghost btn-lg" href="#work">What I do <span class="arr">&darr;</span></a>
-        </div>
-        <div class="hero-meta">
-          <span>ETL from legacy systems</span>
-          <span>Quality checks and shared definitions</span>
-          <span>Documented lineage</span>
+          <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call <span class="arr">&rarr;</span></a>
+          <a class="btn btn-ghost btn-lg" href="#work">What you get <span class="arr">&darr;</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- The problem -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="overline">The problem</span>
-        <h2 class="h2">The data exists. Getting it ready is the work.</h2>
-        <p class="body-lg">Years of records sit across databases, exports, and flat files. Before your team can analyze them or build a model, someone has to reconcile the formats, check the records, and make delivery repeatable.</p>
-      </div>
-      <ul class="sq-list sq-list--muted" style="max-width: 560px;">
-        <li>Records scattered across formats, systems, and years</li>
-        <li>No shared schema, so the same field means three things</li>
-        <li>Missing values, duplicate records, and totals that do not reconcile</li>
-        <li>Manual exports with no reliable refresh or failure alert</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- What I do -->
   <section class="section section--bone" id="work">
     <div class="container">
       <div class="section-head">
-        <span class="overline">What I do</span>
-        <h2 class="h2">From source system to usable dataset.</h2>
+        <span class="overline">Deliverables</span>
+        <h2 class="h2">Source to dataset.</h2>
       </div>
       <div class="block-list block-list--2">
         <div class="block">
           <span class="num">01</span>
-          <h3 class="h4">Extraction</h3>
-          <p>Historical records pulled out of legacy systems, exports, and paper-era flat files, with the source system left intact.</p>
+          <h3 class="h4">Extract and clean</h3>
+          <p>Pull legacy records, remove duplicates, and reconcile schemas and definitions.</p>
         </div>
         <div class="block">
           <span class="num">02</span>
-          <h3 class="h4">Cleaning and normalization</h3>
-          <p>Deduplication, schema mapping, and reconciliation of conflicting definitions, so one record means one thing everywhere.</p>
+          <h3 class="h4">Check the data</h3>
+          <p>Validate missing fields, row counts, and totals. Agree on how invalid records are handled.</p>
         </div>
         <div class="block">
           <span class="num">03</span>
-          <h3 class="h4">Data quality checks</h3>
-          <p>Checks for missing fields, duplicate records, row counts, and reconciled totals. Invalid records follow an agreed handling policy rather than passing through silently.</p>
+          <h3 class="h4">Deliver and refresh</h3>
+          <p>Analytics or training datasets, with documented labeling rules, scheduled loads, failure alerts, and rerun instructions.</p>
         </div>
         <div class="block">
           <span class="num">04</span>
-          <h3 class="h4">Analytics and training datasets</h3>
-          <p>Shared field definitions and a schema built around the intended use. When training labels are needed, the classification rules are part of the handoff.</p>
-        </div>
-        <div class="block">
-          <span class="num">05</span>
-          <h3 class="h4">Scheduled pipelines</h3>
-          <p>Load into your warehouse or project environment, with a refresh schedule, failure alerts, and instructions for safe reruns agreed in the scope.</p>
-        </div>
-        <div class="block">
-          <span class="num">06</span>
-          <h3 class="h4">Lineage and handoff</h3>
-          <p>Code, source-to-field mappings, quality rules, and a runbook. Your team can trace a record and understand how to operate the pipeline.</p>
+          <h3 class="h4">Document and hand off</h3>
+          <p>Code, source-to-field mappings, quality rules, and a runbook your team can follow.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- The standard -->
   <section class="section" id="standard">
     <div class="container">
       <div class="section-head">
-        <span class="overline">The standard</span>
-        <h2 class="h2">Production standard, not pilot standard.</h2>
-        <p class="body-lg">For four years I owned the pipeline layer inside a rural Critical Access Hospital in the Midwestern US: 200+ automated reports and regulatory submissions with zero missed deadlines, and BI-side data conversion on a Veradigm to Paragon migration working alongside Altera. That experience shapes how I build: explicit checks, documented lineage, and instructions someone else can follow.</p>
+        <span class="overline">Experience</span>
+        <h2 class="h2">Built for operations.</h2>
+        <p class="body-lg">Four years owning the pipeline layer at a rural Critical Access Hospital in the Midwestern US, including BI-side Veradigm to Paragon migration work alongside Altera.</p>
       </div>
       <div class="stat-grid stat-grid--3">
         <div class="stat">
           <p class="metric metric--brick"><span data-count-to="200">200</span><span class="unit">+</span></p>
-          <p class="stat-label">Automated reports and submissions in production</p>
+          <p class="stat-label">Automated reports and submissions</p>
         </div>
         <div class="stat">
           <p class="metric"><span data-count-to="4">4</span><span class="unit">yr</span></p>
-          <p class="stat-label">Owning the pipeline layer, on call</p>
+          <p class="stat-label">Owning the pipeline layer</p>
         </div>
         <div class="stat">
           <p class="metric"><span data-count-to="0">0</span></p>
@@ -157,28 +121,15 @@
     </div>
   </section>
 
-  <!-- Engagement -->
-  <section class="section section--bone">
-    <div class="container prose">
-      <span class="overline">Engagement</span>
-      <h2 class="h2" style="margin: 16px 0 24px;">Scoping starts with the source.</h2>
-      <p class="body-lg">An engagement begins with an inventory: what data exists, where it lives, and what condition it is in. We agree on the destination, field definitions, quality checks, refresh schedule, and handoff. You get a fixed scope and a written price before the build.</p>
-      <p class="body-lg">For the first conversation, bring a list of source systems, the output you need, and the manual step or failure slowing your team down. Access requirements are agreed before any data moves.</p>
-    </div>
-  </section>
-
-  <!-- Closing CTA -->
   <section class="cta-dark">
     <span class="ghost" aria-hidden="true">Legacy</span>
     <div class="container prose">
       <span class="overline">Contact</span>
-      <h2 class="h2" style="margin-top: 16px;">What should your data make possible?</h2>
-      <p class="body-lg">A report, a migration, a model, or a dependable refresh. Tell me the source and the intended output. We can start the scope on a 20-minute call.</p>
-      <a class="btn btn-invert btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a 20-min call <span class="arr">&rarr;</span></a>
-      <p class="cta-contact">christian.g.callahan@cgclabs.org &middot; Direct reply within one business day.</p>
+      <h2 class="h2">What do you need from your data?</h2>
+      <p class="body-lg">Bring your sources and desired output. We agree on access, scope, and price before building.</p>
+      <a class="btn btn-invert btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call <span class="arr">&rarr;</span></a>
     </div>
   </section>
-
 </main>
 
 <footer class="footer">
@@ -186,37 +137,28 @@
     <div class="footer-grid">
       <div>
         <a class="logo" href="index.html" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
-        <p class="footer-tag">Data engineering for legacy systems, analytics, and AI. Healthcare analytics and storefront websites also available.</p>
-        <p class="footer-contact">Direct reply within one business day.<br><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a></p>
+        <p class="footer-tag">Data engineering for analytics and AI.</p>
+        <p class="footer-contact"><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a><br>Reply within one business day.</p>
       </div>
-      <nav aria-label="Practices">
-        <h6 class="h6">Practices</h6>
+      <nav aria-label="Services">
+        <h6 class="h6">Services</h6>
         <ul class="footer-links">
-          <li><a href="data-engineering.html">Data Engineering</a></li>
-          <li><a href="analytics.html">Healthcare Analytics</a></li>
-          <li><a href="website.html">Storefront Websites</a></li>
+          <li><a href="data-engineering.html">Data engineering</a></li>
+          <li><a href="analytics.html">Healthcare analytics</a></li>
+          <li><a href="website.html">Websites</a></li>
         </ul>
       </nav>
       <nav aria-label="About">
         <h6 class="h6">About</h6>
         <ul class="footer-links">
-          <li><a href="index.html#method">How I engage</a></li>
-          <li><a href="index.html#operator">The operator</a></li>
-          <li><a href="data-engineering.html#standard">The standard</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Start here">
-        <h6 class="h6">Start here</h6>
-        <ul class="footer-links">
-          <li><a href="data-engineering.html#work">From source to dataset</a></li>
-          <li><a href="data-engineering.html#standard">Production standard</a></li>
-          <li><a href="analytics.html">The analytics practice</a></li>
+          <li><a href="index.html#method">How I work</a></li>
+          <li><a href="index.html#operator">Background</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-fine">
       <span>&copy; <span data-year>2026</span> CGC Ventures Holdings LLC. 30 N Gould St #46383, Sheridan, WY 82801.</span>
-      <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a> &middot; cgclabs.org</span>
+      <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
     </div>
   </div>
 </footer>
