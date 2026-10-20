@@ -44,7 +44,7 @@ TASKS boxes checked, TESTING table run and shown to the user, README handoff wri
 - [x] Preserve the design, existing proof points, contact address, and analytics pricing.
 - [x] Review the source diff and run static checks.
 - [ ] Verify rendered layouts at 375px, 768px, and 1280px, plus interactive accessibility. Browser policy blocked local preview access.
-- [ ] Deploy the revision after release verification.
+- [x] Merge and deploy as `283db04`; verify six production pages and three shared assets match the source.
 
 | TESTING.md check | Observed result |
 | --- | --- |
@@ -58,3 +58,16 @@ TASKS boxes checked, TESTING table run and shown to the user, README handoff wri
 | 8. Accessibility | Static checks pass: one h1 per page, skip links, unique IDs, and active navigation. Keyboard, drawer, and reduced-motion behavior remain unverified. |
 
 Both JavaScript files pass `node --check`. `git diff --check` passes. No build step exists for this static site. Local HTTP readiness requests timed out; HTTP serving was not verified.
+
+## Shorter site (2026-10-20)
+
+- [x] Reduce copy on all six pages: 3,067 to 1,071 main-content words (65% less).
+- [x] Combine repeated sections; shorten headings, buttons, metadata, and footers.
+- [x] Tighten responsive spacing without changing fonts, colors, or type sizes.
+- [x] Preserve pricing terms, outcome counters, data engineering priority, and all existing bookmark targets.
+- [x] Verify HTML nesting, headings, navigation, structured data, copy rules, and 135 local links/resources/anchors.
+- [x] Screenshot all six production pages at 375px, 768px, and 1280px. No horizontal overflow or clipped text detected.
+- [x] Check mobile menu open/close, Escape, skip link, and visible keyboard focus. No browser console errors captured.
+- [x] Deploy `54b3059` through main; confirm production success.
+
+At a 714px viewport, the homepage decreased from 5,404px to 2,766px. Review artifacts: workspace `../tmp/short-site-review/`, including 18 full-page screenshots and `responsive-results.json`. Motion code was unchanged; reduced-motion emulation was not run.

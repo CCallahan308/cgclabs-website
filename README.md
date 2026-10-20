@@ -21,7 +21,13 @@ The six HTML pages and three shared CSS/JS assets at `cgclabs.org` matched this 
 
 The `codex/data-engineering-focus` branch makes data engineering lead in the homepage, service list, desktop/mobile navigation, metadata, and all footers. The service page now covers source extraction through documented handoff. The existing design, contact address, and analytics pricing remain in place.
 
-Static checks passed across all six pages, including 156 local links, resources, and anchors. JavaScript syntax and `git diff --check` passed. Browser policy blocked preview access, so desktop/mobile visual checks and interactive accessibility checks remain pending. This revision has not been deployed.
+Static checks passed across all six pages, including 156 local links, resources, and anchors. JavaScript syntax and `git diff --check` passed. Initial browser checks were blocked. The revision was merged and deployed as `283db04`; all six production pages and three shared assets matched the source.
+
+## Shorter copy and pages (2026-10-20)
+
+Main copy fell from 3,067 to 1,071 words across the six pages, a 65% reduction. Repeated sections were combined, headings and buttons shortened, and section spacing and footers tightened. Fonts, colors, data engineering priority, outcome counters, pricing, and payment terms remain in place.
+
+Static checks pass for all 135 local links, resources, and anchors. Existing bookmark targets remain valid. Production screenshots and layout checks covered all six pages at 375px, 768px, and 1280px, with no horizontal overflow or clipped text detected. Menu open/close, Escape, skip link, and keyboard focus checks passed. At the same 714px browser width, homepage height fell from 5,404px to 2,766px. Screenshots and measurements are in the workspace's ignored `../tmp/short-site-review/` folder.
 
 ## Deploy
 Any static host: Vercel (preset "Other", output dir `.`), Netlify Drop (drag the folder), or GitHub Pages.
