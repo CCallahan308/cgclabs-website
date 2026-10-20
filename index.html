@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CGC Labs | Data Engineering for Analytics and AI</title>
-<meta name="description" content="Legacy data made usable for analytics and AI. Fixed scope, documented pipelines, and code you own.">
+<title>Data Engineer for Hire &amp; ETL Consulting | CGC Labs</title>
+<meta name="description" content="Hire an independent data engineer for ETL pipelines, legacy migration, and data quality. For organizations of every size, with code and handoff included.">
 <link rel="canonical" href="https://cgclabs.org/">
-<meta property="og:title" content="CGC Labs | Data Engineering for Analytics and AI">
-<meta property="og:description" content="Legacy data made usable for analytics and AI. Fixed scope, documented pipelines, and code you own.">
+<meta property="og:title" content="Data Engineer for Hire &amp; ETL Consulting | CGC Labs">
+<meta property="og:description" content="Hire an independent data engineer for ETL pipelines, legacy migration, and data quality. For organizations of every size, with code and handoff included.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cgclabs.org/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -15,16 +15,68 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
 <link rel="stylesheet" href="assets/style.css?v=20261020-1">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="CGC Labs">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "CGC Labs",
-  "url": "https://cgclabs.org",
-  "email": "christian.g.callahan@cgclabs.org",
-  "description": "Independent data engineering for analytics and AI. Healthcare analytics and storefront websites also available.",
-  "areaServed": "United States",
-  "parentOrganization": { "@type": "Organization", "name": "CGC Ventures Holdings LLC" }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cgclabs.org/#organization",
+      "name": "CGC Labs",
+      "legalName": "CGC Ventures Holdings LLC",
+      "url": "https://cgclabs.org/",
+      "email": "christian.g.callahan@cgclabs.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cgclabs.org/assets/logo.svg",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cgclabs.org/#website",
+      "name": "CGC Labs",
+      "url": "https://cgclabs.org/",
+      "publisher": {
+        "@id": "https://cgclabs.org/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cgclabs.org/#webpage",
+      "name": "Data Engineer for Hire & ETL Consulting | CGC Labs",
+      "url": "https://cgclabs.org/",
+      "description": "Hire an independent data engineer for ETL pipelines, legacy migration, and data quality. For organizations of every size, with code and handoff included.",
+      "isPartOf": {
+        "@id": "https://cgclabs.org/#website"
+      },
+      "publisher": {
+        "@id": "https://cgclabs.org/#organization"
+      },
+      "inLanguage": "en-US",
+      "mainEntity": {
+        "@id": "https://cgclabs.org/data-engineering#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://cgclabs.org/data-engineering#service",
+      "name": "Data engineering consulting",
+      "serviceType": "Data engineering consulting",
+      "url": "https://cgclabs.org/data-engineering",
+      "provider": {
+        "@id": "https://cgclabs.org/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -34,11 +86,11 @@
 
 <header class="nav">
   <div class="container nav-inner">
-    <a class="logo" href="index.html" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
+    <a class="logo" href="/" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
     <ul class="nav-links">
-      <li><a href="data-engineering.html">Data Engineering</a></li>
-      <li><a href="analytics.html">Analytics</a></li>
-      <li><a href="website.html">Websites</a></li>
+      <li><a href="/data-engineering">Data Engineering</a></li>
+      <li><a href="/analytics">Analytics</a></li>
+      <li><a href="/website">Websites</a></li>
     </ul>
     <a class="btn btn-primary nav-cta" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call</a>
     <button class="hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
@@ -50,13 +102,13 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" aria-label="Menu">
   <div class="drawer-head">
-    <a class="logo" href="index.html"><b>CGC</b><i>Labs</i></a>
+    <a class="logo" href="/"><b>CGC</b><i>Labs</i></a>
     <button class="drawer-close" aria-label="Close menu">&times;</button>
   </div>
   <ul class="drawer-links">
-    <li><a href="data-engineering.html">Data Engineering</a></li>
-    <li><a href="analytics.html">Analytics</a></li>
-    <li><a href="website.html">Websites</a></li>
+    <li><a href="/data-engineering">Data Engineering</a></li>
+    <li><a href="/analytics">Analytics</a></li>
+    <li><a href="/website">Websites</a></li>
   </ul>
   <div class="drawer-cta">
     <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call</a>
@@ -68,11 +120,11 @@
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="overline reveal">CGC Labs &middot; Data engineering</span>
-        <h1 class="h1 reveal reveal--1">Your data.<br>Ready to work.</h1>
-        <p class="body-lg reveal reveal--2">I turn legacy data into reliable pipelines and usable datasets for analytics and AI.</p>
+        <h1 class="h1 reveal reveal--1">Your data<br>engineer.</h1>
+        <p class="body-lg reveal reveal--2">I build ETL pipelines, migrate legacy data, and deliver clean datasets for analytics and AI. For organizations of every size.</p>
         <div class="hero-ctas reveal reveal--3">
           <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Data%20engineering%20inquiry">Book a call <span class="arr">&rarr;</span></a>
-          <a class="btn btn-ghost btn-lg" href="data-engineering.html">See the work <span class="arr">&rarr;</span></a>
+          <a class="btn btn-ghost btn-lg" href="/data-engineering">Data engineering services <span class="arr">&rarr;</span></a>
         </div>
         <p class="hero-trust">Fixed scope. Documented handoff. You own the work.</p>
       </div>
@@ -96,7 +148,7 @@
             <p class="stat-label">BI-side Veradigm to Paragon migration work</p>
           </div>
         </div>
-        <p class="caption chart-caption">At a rural Critical Access Hospital in the Midwestern US. <a href="data-engineering.html#standard">Background &rarr;</a></p>
+        <p class="caption chart-caption">At a rural Critical Access Hospital in the Midwestern US. <a href="/data-engineering#standard">Background &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -108,19 +160,19 @@
         <h2 class="h2">Data engineering first.</h2>
       </div>
       <div class="index-list">
-        <a class="index-row index-row--primary" href="data-engineering.html">
+        <a class="index-row index-row--primary" href="/data-engineering">
           <span class="idx" aria-hidden="true">01</span>
           <h3 class="name">Data <em>Engineering</em></h3>
           <span class="arr" aria-hidden="true">&rarr;</span>
-          <span class="desc">Legacy extraction, quality checks, and documented pipelines for analytics and AI.</span>
+          <span class="desc">ETL pipeline development, legacy data migration, and data quality checks for analytics and AI.</span>
         </a>
-        <a class="index-row" href="analytics.html">
+        <a class="index-row" href="/analytics">
           <span class="idx" aria-hidden="true">02</span>
-          <h3 class="name">Healthcare <em>Analytics</em></h3>
+          <h3 class="name">Business <em>Analytics</em></h3>
           <span class="arr" aria-hidden="true">&rarr;</span>
           <span class="desc">Executive dashboards with agreed definitions and a path from metric to cause.</span>
         </a>
-        <a class="index-row" href="website.html">
+        <a class="index-row" href="/website">
           <span class="idx" aria-hidden="true">03</span>
           <h3 class="name">Storefront <em>Websites</em></h3>
           <span class="arr" aria-hidden="true">&rarr;</span>
@@ -155,7 +207,7 @@
       </div>
       <div class="section-note" id="operator">
         <h3 class="h4">Built in operations.</h3>
-        <p>Four years owning the pipeline layer at a rural Critical Access Hospital in the Midwestern US. I scope, build, and document the work myself.</p>
+        <p>I work directly with you from scope through handoff. Your code, documented and ready to run.</p>
       </div>
     </div>
   </section>
@@ -175,29 +227,29 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
-        <p class="footer-tag">Data engineering for analytics and AI.</p>
+        <a class="logo" href="/" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
+        <p class="footer-tag">Data engineering for organizations of every size.</p>
         <p class="footer-contact"><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a><br>Reply within one business day.</p>
       </div>
       <nav aria-label="Services">
         <h6 class="h6">Services</h6>
         <ul class="footer-links">
-          <li><a href="data-engineering.html">Data engineering</a></li>
-          <li><a href="analytics.html">Healthcare analytics</a></li>
-          <li><a href="website.html">Websites</a></li>
+          <li><a href="/data-engineering">Data engineering</a></li>
+          <li><a href="/analytics">Business analytics</a></li>
+          <li><a href="/website">Websites</a></li>
         </ul>
       </nav>
       <nav aria-label="About">
         <h6 class="h6">About</h6>
         <ul class="footer-links">
-          <li><a href="index.html#method">How I work</a></li>
-          <li><a href="index.html#operator">Background</a></li>
+          <li><a href="/#method">How I work</a></li>
+          <li><a href="/#operator">Background</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-fine">
       <span>&copy; <span data-year>2026</span> CGC Ventures Holdings LLC. 30 N Gould St #46383, Sheridan, WY 82801.</span>
-      <span><a href="privacy.html">Privacy</a> &middot; <a href="cookies.html">Cookies</a></span>
+      <span><a href="/privacy">Privacy</a> &middot; <a href="/cookies">Cookies</a></span>
     </div>
   </div>
 </footer>

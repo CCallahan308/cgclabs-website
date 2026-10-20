@@ -2,6 +2,9 @@
 
 Static multi-page site for CGC Labs (intended to publish at cgclabs.org). Plain HTML + one CSS file + one small JS file. No build step, no dependencies.
 
+## Current positioning (2026-10-20)
+Data engineering for organizations of every size is the primary offer. Business analytics and storefront websites are secondary. Healthcare references describe verified prior work only; they do not define the audience. This user direction supersedes older healthcare positioning. Preserve the compact design and copy.
+
 ## Read first
 The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, brand voice, method lexicon) and `../02 - Brand and Web/Website Theme Bible.md` (design tokens, components, copy bank). This file only adds project-local conventions.
 
@@ -19,7 +22,7 @@ The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, bra
 - Sharp corners (2-6px), numbers in JetBrains Mono with tabular figures. One full-bleed Brick CTA band per page (the closing wall) is the sanctioned Brick fill; otherwise Brick stays an emphasis ink.
 
 ## Commands
-- Preview: open any page in a browser, or `python -m http.server` in this folder.
+- Preview: `vercel dev --listen 8000` in this folder, which handles the clean routes in `vercel.json`.
 - Deploy: static hosting (Vercel/Netlify/GitHub Pages). See RUNBOOK.md.
 
 ## Verification before done

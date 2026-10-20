@@ -1,17 +1,17 @@
 # CGC Labs website (cgclabs.org)
 
-Static multi-page site. Data engineering is the primary practice; healthcare analytics and storefront websites remain available. Plain HTML, no build step.
+Static multi-page site. Data engineering for organizations of every size is the primary practice; business analytics and storefront websites remain available. Plain HTML, no build step.
 
 ## Structure
 - `index.html`: data engineering offer, operating experience, secondary services, method, operator note, contact.
-- `analytics.html`: healthcare BI: offer, method, verified proof, consulting-firm subcontract lane, locked pricing.
+- `analytics.html`: business analytics: dashboards, metric governance, verified prior-work examples, subcontract work, locked pricing.
 - `website.html`: storefronts for independent retailers leaving Etsy and eBay.
 - `data-engineering.html`: legacy data extraction, quality checks, datasets for analytics and ML/AI, scheduled pipelines, lineage, and handoff.
 - `assets/style.css`: design tokens and components (mirrors `../02 - Brand and Web/Website Theme Bible.md`).
 - `assets/site.js`: mobile drawer, nav scroll state, metric count-up.
 
 ## Preview
-Open `index.html` in a browser, or run `python -m http.server 8000` here and visit http://localhost:8000.
+Run `vercel dev --listen 8000` here and visit http://localhost:8000. Use Vercel's clean URL handling when testing navigation; a plain file server does not resolve the extensionless service routes.
 
 Live: https://cgclabs.org (Vercel, project cgclabs-website, auto-deploy on push to main). Source repo: https://github.com/CCallahan308/cgclabs-website. Mirror: https://ccallahan308.github.io/cgclabs-website/
 
@@ -32,6 +32,12 @@ Static checks pass for all 135 local links, resources, and anchors. Existing boo
 ## Deploy
 Any static host: Vercel (preset "Other", output dir `.`), Netlify Drop (drag the folder), or GitHub Pages.
 
+## Search and broader positioning (2026-10-20)
+
+The homepage and data engineering page address organizations of every size. Analytics is now a general business offer. Healthcare appears only in historical experience and results. Existing prices and proof figures remain unchanged.
+
+Unique page metadata, clean canonical URLs, linked organization/service/breadcrumb data, `robots.txt`, and a six-page `sitemap.xml` support discovery. Run `node scripts/check-seo.mjs` before release. See RUNBOOK.md for Search Console setup; publishing these files does not confirm indexing or rankings.
+
 ## House rules (from ../CLAUDE.md, enforced by TESTING.md)
 - Only the verified proof points: 22-point NPS lift, first-ever 75th percentile, $150K vendor replaced, $10K/yr savings, 200+ reports/submissions with zero missed deadlines, 4 years in-house BI, Veradigm-to-Paragon BI-side alongside Altera.
 - Prior employer is always "a rural Critical Access Hospital in the Midwestern US." Never named.
@@ -40,4 +46,4 @@ Any static host: Vercel (preset "Other", output dir `.`), Netlify Drop (drag the
 
 ## To fill later
 - Calendly URL (currently mailto CTAs to christian.g.callahan@cgclabs.org)
-- OG image, robots.txt, sitemap when the domain goes live
+- OG image for social previews

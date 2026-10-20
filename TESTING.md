@@ -8,3 +8,7 @@
 6. **Links resolve:** every internal href points to an existing file or anchor.
 7. **Visual pass:** each page screenshotted at desktop and mobile widths; nav, drawer, stat grid, cards, footer verified.
 8. **Accessibility:** single h1 per page, skip link works, focus-visible ring, aria-current on active nav, drawer focus behavior, reduced-motion respected.
+
+## Search checks
+
+Run `node scripts/check-seo.mjs`. This checks canonical and social URLs, crawl files, structured data, contextual product links, and local links without network access.
