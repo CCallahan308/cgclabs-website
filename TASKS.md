@@ -112,4 +112,4 @@ Verification artifacts: `../tmp/ux-fixes-2026-10-21/`, including 18 viewport scr
 - [x] Remove count-up and particle effects; respect reduced-motion CSS.
 - [x] Pass 32 UI/SEO checks, JavaScript syntax, copy checks, and diff review.
 - [x] Inspect all six pages at 375, 768, and 1280px; check native menu focus and close paths.
-- [ ] Push, merge, and verify production against the exact source revision.
+- [x] Push, merge, and verify production against the exact source revision. See RELEASE-2026-10-22.md.
