@@ -94,6 +94,12 @@ Review files are in `../tmp/seo-site-review/`: 18 viewport screenshots, responsi
 - [x] Keep two prior-work metrics in the homepage hero; retain detailed healthcare evidence on the experience page.
 - [x] Improve focus outlines on dark sections and reassurance contrast on Paper.
 - [x] Pass 17 interaction regression tests and 11 SEO tests, JavaScript syntax, HTML structure, copy rules, pricing, and 134 local links/resources/anchors.
-- [ ] Publish and verify the exact production commit, responsive layouts, native keyboard flow, and focus visibility.
+- [x] Publish and verify production commit `ea6de01e1c4295db027c3cd831edccb6b6def078`, deployment `7241235395`.
+- [x] Check all six live pages at 375px, 768px, and 1280px: one h1 per page, no horizontal overflow or clipped text/buttons detected.
+- [x] Verify native initial focus, forward/reverse Tab wrap, Escape, close button, scrim, navigation, and resize focus on home and service pages. Closed drawer links are skipped by Tab.
+- [x] Confirm light focus outlines on dark sections and darker helper text in the live browser. No console errors captured.
+- [x] Match six production pages and six assets/crawl files to source; confirm five legacy .html redirects.
 
 The old homepage counter-equality check was updated for the approved removal of the zero-deadlines hero tile. The underlying proof and all counters on the experience page remain intact.
+
+Verification artifacts: `../tmp/ux-fixes-2026-10-21/`, including 18 viewport screenshots, native interaction results, contrast observations, and production responses. Live checks caught an initial-focus timing issue from a visibility transition; the redundant visibility transition was removed, and native initial focus was rechecked successfully. Initial inert markup still hides closed controls from keyboard and assistive navigation. Reduced-motion emulation, email sending/delivery, and universal sub-400ms performance were not tested; no such completion claims are made.
