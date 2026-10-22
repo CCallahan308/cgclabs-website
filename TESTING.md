@@ -12,3 +12,7 @@
 ## Search checks
 
 Run `node scripts/check-seo.mjs`. This checks canonical and social URLs, crawl files, structured data, contextual product links, and local links without network access.
+
+## Interaction regression checks
+
+Run `node scripts/check-ui.mjs`. The dependency-free tests exercise menu focus, background isolation, close paths, preserved state, desktop resize, and initial dialog/email contracts on all six pages. Browser checks must also verify native Tab order and inert behavior, visible focus, and responsive layout.

@@ -38,6 +38,12 @@ The homepage and data engineering page address organizations of every size. Anal
 
 Unique page metadata, clean canonical URLs, linked organization/service/breadcrumb data, `robots.txt`, and a six-page `sitemap.xml` support discovery. Run `node scripts/check-seo.mjs` before release. See RUNBOOK.md for Search Console setup; publishing these files does not confirm indexing or rankings.
 
+## UX review fixes (2026-10-21)
+
+Contact buttons now say "Email your project" and prefill sources, goal, and timeline prompts. Reply timing appears beside the action. The homepage hero keeps two metrics from prior in-house BI work. Detailed healthcare proof remains on the data engineering page.
+
+The mobile menu hides closed controls from interaction, contains focus while open, restores background state and trigger focus on close, and closes at the desktop breakpoint. Focus outlines adapt to dark sections; helper text uses darker ink. Run `node scripts/check-ui.mjs` for the regression tests and `node scripts/check-seo.mjs` for search/link checks.
+
 ## House rules (from ../CLAUDE.md, enforced by TESTING.md)
 - Only the verified proof points: 22-point NPS lift, first-ever 75th percentile, $150K vendor replaced, $10K/yr savings, 200+ reports/submissions with zero missed deadlines, 4 years in-house BI, Veradigm-to-Paragon BI-side alongside Altera.
 - Prior employer is always "a rural Critical Access Hospital in the Midwestern US." Never named.
@@ -45,5 +51,5 @@ Unique page metadata, clean canonical URLs, linked organization/service/breadcru
 - No hype words, no emojis, no em dashes, first-person founder voice.
 
 ## To fill later
-- Calendly URL (currently mailto CTAs to christian.g.callahan@cgclabs.org)
+- Optional scheduling integration if direct booking replaces the current email inquiry.
 - OG image for social previews

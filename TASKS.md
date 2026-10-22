@@ -86,3 +86,14 @@ At a 714px viewport, the homepage decreased from 5,404px to 2,766px. Review arti
 - [x] Document owner steps for Search Console verification and sitemap submission. Neither was completed through Search Console; the browser was signed out.
 
 Review files are in `../tmp/seo-site-review/`: 18 viewport screenshots, responsive measurements, production responses, and interaction results. Full-page screenshot capture failed, so viewport captures were used with document-wide layout measurements. CSS and motion scripts were unchanged; reduced-motion emulation was not rerun. The audit also found that www.cgclabs.org did not resolve; RUNBOOK.md records the domain-owner follow-up.
+
+## UX review fixes (2026-10-21)
+
+- [x] Fix hidden menu focus, Tab containment, Escape/close restoration, background isolation, and desktop resize behavior.
+- [x] Use truthful email CTAs with source/goal/timeline prompts, nearby reply guidance, and fallback addresses.
+- [x] Keep two prior-work metrics in the homepage hero; retain detailed healthcare evidence on the experience page.
+- [x] Improve focus outlines on dark sections and reassurance contrast on Paper.
+- [x] Pass 17 interaction regression tests and 11 SEO tests, JavaScript syntax, HTML structure, copy rules, pricing, and 134 local links/resources/anchors.
+- [ ] Publish and verify the exact production commit, responsive layouts, native keyboard flow, and focus visibility.
+
+The old homepage counter-equality check was updated for the approved removal of the zero-deadlines hero tile. The underlying proof and all counters on the experience page remain intact.
