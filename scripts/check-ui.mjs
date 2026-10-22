@@ -106,7 +106,7 @@ function fixture({ activePage = false } = {}) {
   const first = new Element("a", "logo", { href: "/" });
   const close = new Element("button", "drawer-close");
   const service = new Element("a", "", { href: "/data-engineering" });
-  const last = new Element("a", "btn", { href: "mailto:christian.g.callahan@cgclabs.org" });
+  const last = new Element("a", "btn", { href: "mailto:christian.g.callahan@gmail.com" });
   const main = new Element("main");
   const backgroundLink = new Element("a", "", { href: "/analytics" });
   const existingInert = new Element("section");
@@ -243,12 +243,14 @@ for (const file of pages) {
     assert.match(drawer, /\baria-hidden="true"/);
     assert.match(drawer, /\brole="dialog"/);
     assert.doesNotMatch(html, /Book a call|message sent|call booked|booking confirmed/i);
-    const inquiryLinks = [...html.matchAll(/href="(mailto:[^"]+)"/g)]
-      .map(([, raw]) => new URL(raw.replaceAll("&amp;", "&")))
-      .filter((url) => url.searchParams.has("subject"));
+    assert.doesNotMatch(html, /christian\.g\.callahan@cgclabs\.(?:org|io)/i, `${file}: obsolete contact address remains`);
+    const emailLinks = [...html.matchAll(/href="(mailto:[^"]+)"/g)]
+      .map(([, raw]) => new URL(raw.replaceAll("&amp;", "&")));
+    for (const url of emailLinks) assert.equal(url.pathname, "christian.g.callahan@gmail.com");
+    const inquiryLinks = emailLinks.filter((url) => url.searchParams.has("subject"));
     assert.ok(inquiryLinks.length >= 2, `${file}: contextual inquiry links missing`);
     for (const url of inquiryLinks) {
-      assert.equal(url.pathname, "christian.g.callahan@cgclabs.org");
+      assert.equal(url.pathname, "christian.g.callahan@gmail.com");
       assert.ok(url.searchParams.get("subject"));
       const body = url.searchParams.get("body");
       assert.ok(body, `${file}: email prompts missing`);

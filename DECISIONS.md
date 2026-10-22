@@ -41,3 +41,7 @@ The user requested a complete modern UI rebuild using the supplied premium-site 
 ### Original logo retained (2026-10-22)
 
 The user requested the old logo because it is on the business cards. Restored the earlier site's stacked CGC / LABS PNG unchanged in all shared brand placements and structured data. The earlier serif CGC favicon and fallback SVG also replace the temporary routing mark. The current layout and typography remain; copy rewrites are supplied as a review for consideration.
+
+### Contact email update (2026-10-22)
+
+At the user's request, the current public contact is `christian.g.callahan@gmail.com`. This supersedes the earlier domain-email choice until further direction. All six pages use Gmail in displayed addresses, inquiry and plain mailto links, and organization structured data. Inquiry subjects and project prompts are preserved.

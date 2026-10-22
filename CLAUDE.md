@@ -15,6 +15,7 @@ The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, bra
 - `assets/favicon.svg`
 
 ## Conventions
+- Current contact email: `christian.g.callahan@gmail.com`. Use it in displayed addresses, every mailto link, and organization structured data until the user requests another change.
 - Copy: first person, founder-voiced, short sentences. No hype words, no emojis, no em dashes in any new copy.
 - Verified proof points only (see `../CLAUDE.md` #4). Prior employer stays "a rural Critical Access Hospital in the Midwestern US."
 - Prices: only the locked numbers on `analytics.html` ($8,500 diagnostic, $15,000/mo). No prices on other pages.

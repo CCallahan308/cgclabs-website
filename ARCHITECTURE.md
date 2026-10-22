@@ -7,7 +7,7 @@ One of four sibling site projects in the CGC Labs library (with `measuremap-mark
 - **Stack:** static HTML5, one shared stylesheet, one small vanilla JS file. No framework, no package manager, no build step. Deliberate choice; see DECISIONS.md.
 - **Design source:** DESIGN.md and STYLE.md (tokens, type scale, components). Implemented by hand in `assets/style.css`.
 - **Fonts:** Cabinet Grotesk and General Sans through official Fontshare CSS links, with swap and system fallbacks. No font binaries in the public repository.
-- **Contact:** `mailto:christian.g.callahan@cgclabs.org`. No form backend, no Calendly URL available yet [to fill if a Calendly link is added].
+- **Contact:** `mailto:christian.g.callahan@gmail.com`. No form backend, no Calendly URL available yet [to fill if a Calendly link is added].
 
 ## Boundaries
 - Copy and claims are governed by the library `../CLAUDE.md` non-negotiables. This repo's code never overrides those.

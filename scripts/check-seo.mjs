@@ -46,6 +46,8 @@ for (const [file, path] of pages) {
     assert.doesNotMatch(html, /<meta[^>]+(?:noindex|nofollow)/i);
     const page = schema(file)["@graph"]?.find((node) => node["@type"] === "WebPage");
     assert.ok(page, `${file}: WebPage structured data missing`);
+    const organization = schema(file)["@graph"].find((node) => node["@type"] === "Organization");
+    assert.equal(organization?.email, "christian.g.callahan@gmail.com", `${file}: organization contact email is stale`);
     assert.equal(page.url, origin + path);
     assert.equal(page.name, decodeEntities(html.match(/<title>([^<]+)<\/title>/)[1]));
     assert.equal(page.description, decodeEntities(html.match(/<meta name="description" content="([^"]+)"/)[1]));
