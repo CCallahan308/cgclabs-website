@@ -201,25 +201,14 @@ h4,.h4 {
 .logo {
   display:inline-flex;
   align-items:center;
-  gap:10px;
   min-height:44px;
-  font-family:var(--display);
-  font-size:30px;
-  font-weight:800;
-  letter-spacing:-.06em;
+  flex-shrink:0;
   line-height:1;
-  white-space:nowrap;
 }
-.logo-mark {
-  width:30px;
-  height:30px;
-  margin-right:3px;
-}
-.logo i {
-  font:inherit;
-}
-.logo b {
-  font:inherit;
+.logo img {
+  display:block;
+  width:118px;
+  height:auto;
 }
 .nav-links {
   display:flex;
@@ -1174,12 +1163,8 @@ h4,.h4 {
   .nav-inner {
     height:70px;
   }
-  .logo {
-    font-size:28px;
-  }
-  .logo-mark {
-    width:26px;
-    height:26px;
+  .logo img {
+    width:100px;
   }
   .home-hero {
     padding:30px 0 32px;

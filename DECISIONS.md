@@ -37,3 +37,7 @@
 The founder-led introduction now identifies Christian Callahan. This supersedes the earlier no-operator-name visual choice.
 
 The user requested a complete modern UI rebuild using the supplied premium-site resource. DESIGN.md and STYLE.md supersede earlier paper, serif, Brick, count-up, and particle-field visual decisions. The replacement uses forest ink, bright neutrals, lime accents, Fontshare typography, and native service workflow schematics. All six routes, original bookmarks, verified proof, locked analytics terms, SEO graphs, and email inquiries remain. Fontshare API delivery replaces Google Fonts; the legal pages reflect the provider change. Font files are not redistributed in the public repository.
+
+### Original logo retained (2026-10-22)
+
+The user requested the old logo because it is on the business cards. Restored the earlier site's stacked CGC / LABS PNG unchanged in all shared brand placements and structured data. The earlier serif CGC favicon and fallback SVG also replace the temporary routing mark. The current layout and typography remain; copy rewrites are supplied as a review for consideration.

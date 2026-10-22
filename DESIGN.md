@@ -6,6 +6,8 @@ Rebuilt October 22, 2026 at the user's request. This replaces the earlier paper,
 
 A clear route through complicated data. Use a bespoke routing diagram, large grotesk typography, precise rules, and generous but bounded whitespace. The diagram describes a workflow, not a live system or measured performance. No stock dashboards, customer logos, decorative particles, gradients, glass, or generic feature-card grids.
 
+Brand identity: retain the original stacked CGC / LABS artwork in `assets/logo.png`. The user requested this logo to stay consistent with existing business cards. Do not replace it with the routing icon or redraw it as a new wordmark. The PNG is copied unchanged from the earlier site.
+
 ## Tokens
 
 - Canvas `#f6f8f4`; white `#ffffff`; soft surface `#eaf0e9`.
