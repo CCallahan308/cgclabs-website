@@ -11,10 +11,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cgclabs.org/website">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261021-2">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&amp;display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css?v=20261022-1">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:site_name" content="CGC Labs">
 <script type="application/ld+json">
@@ -103,19 +104,18 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<canvas class="bg-field" aria-hidden="true"></canvas>
 
 <header class="nav">
   <div class="container nav-inner">
-    <a class="logo" href="/" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
+    <a class="logo" href="/" aria-label="CGC Labs, home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 4h12v10H3zm14 14h12v10H17z" fill="currentColor"/><path d="M9 14v9h8M15 9h9v9" fill="none" stroke="currentColor" stroke-width="3"/></svg><span>cgc labs</span></a>
     <ul class="nav-links">
-      <li><a href="/data-engineering">Data Engineering</a></li>
+      <li><a href="/data-engineering">Data engineering</a></li>
       <li><a href="/analytics">Analytics</a></li>
       <li><a href="/website" aria-current="page">Websites</a></li>
     </ul>
     <a class="btn btn-primary nav-cta" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project</a>
     <button class="hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
   </div>
 </header>
@@ -123,74 +123,83 @@
 <div class="scrim"></div>
 <aside class="drawer" id="drawer" role="dialog" aria-label="Menu" inert aria-hidden="true">
   <div class="drawer-head">
-    <a class="logo" href="/"><b>CGC</b><i>Labs</i></a>
+    <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 4h12v10H3zm14 14h12v10H17z" fill="currentColor"/><path d="M9 14v9h8M15 9h9v9" fill="none" stroke="currentColor" stroke-width="3"/></svg><span>cgc labs</span></a>
     <button class="drawer-close" aria-label="Close menu">&times;</button>
   </div>
   <ul class="drawer-links">
-    <li><a href="/data-engineering">Data Engineering</a></li>
+    <li><a href="/data-engineering">Data engineering</a></li>
     <li><a href="/analytics">Analytics</a></li>
     <li><a href="/website" aria-current="page">Websites</a></li>
   </ul>
   <div class="drawer-cta">
-    <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project</a>
-  </div>
+    <a class="btn btn-primary" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project</a>
+  <p class="drawer-note">Independent data engineering.<br>For organizations of every size.</p>
+</div>
 </aside>
 
 <main id="main">
-  <section class="hero">
+  <section class="service-hero">
     <div class="container">
-      <div class="prose prose--hero">
-        <span class="overline reveal">Also available &middot; Storefront websites</span>
-        <h1 class="h1 reveal reveal--1">Own your storefront.</h1>
-        <p class="body-lg reveal reveal--2">Stores for independent retailers leaving Etsy and eBay. Your catalog, checkout, domain, and customer list.</p>
-        <div class="hero-ctas reveal reveal--3">
-          <a class="btn btn-primary btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project <span class="arr">&rarr;</span></a>
-          <a class="btn btn-ghost btn-lg" href="#build">Details <span class="arr">&darr;</span></a>
+      <div class="service-top"><span class="eyebrow">03 / Storefront websites</span></div>
+      <div class="service-hero-grid">
+        <div>
+          <h1>A storefront<br>you own.</h1>
+          <p class="lead">Your catalog, checkout, domain, and customer list. I build the store and move your listings from Etsy or eBay.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-text" href="#build">Explore the build <span aria-hidden="true">&darr;</span></a>
+          </div>
+          <p class="reply-note">Your products. Your goal. A reply within one business day.</p>
         </div>
-        <p class="hero-trust">Tell me your sources and goal. Reply within one business day.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--bone" id="build">
-    <div class="container">
-      <div class="section-head">
-        <span class="overline">Deliverables</span>
-        <h2 class="h2">Ready to sell.</h2>
-      </div>
-      <div class="block-list block-list--2">
-        <div class="block">
-          <span class="num">01</span>
-          <h3 class="h4">Storefront</h3>
-          <p>Fast product pages, collections, cart, and checkout, built for phones.</p>
-        </div>
-        <div class="block">
-          <span class="num">02</span>
-          <h3 class="h4">Catalog migration</h3>
-          <p>Listings, variants, prices, and photos moved from Etsy or eBay into one clean catalog.</p>
-        </div>
-        <div class="block">
-          <span class="num">03</span>
-          <h3 class="h4">Operations and reporting</h3>
-          <p>Payments, tax, shipping, and order alerts. A weekly report on product performance.</p>
-        </div>
-        <div class="block" id="own">
-          <span class="num">04</span>
-          <h3 class="h4">Handoff</h3>
-          <p>Your domain, code, product data, and customer list, with a short runbook. No monthly fee to me.</p>
+        <div class="service-art">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" role="img" aria-labelledby="store-title store-desc">
+            <title id="store-title">A catalog becomes your own storefront</title>
+            <desc id="store-desc">Product listings move into a storefront with a checkout and order operations, while ownership stays with the retailer.</desc>
+            <rect x="12" y="22" width="536" height="316" rx="28" fill="#EDF1E8"/>
+            <rect x="45" y="103" width="103" height="145" rx="4" fill="#FFFFFF" stroke="#142b24" stroke-width="2"/>
+            <rect x="62" y="87" width="103" height="145" rx="4" fill="#d5f36b" stroke="#142b24" stroke-width="2"/>
+            <circle cx="113" cy="118" r="8" fill="none" stroke="#142b24" stroke-width="2"/>
+            <path d="M82 154h62m-62 24h48m30-2h55" fill="none" stroke="#142b24" stroke-width="3"/>
+            <path d="m205 168 10 8-10 8" fill="none" stroke="#142b24" stroke-width="3"/>
+            <rect x="215" y="102" width="134" height="146" rx="4" fill="#142b24"/>
+            <path d="M238 128h12l10 61h56l9-42h-70m8 55a5 5 0 1 0 0 10 5 5 0 0 0 0-10m49 0a5 5 0 1 0 0 10 5 5 0 0 0 0-10" fill="none" stroke="#d5f36b" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M349 176h49m-10-8 10 8-10 8" fill="none" stroke="#142b24" stroke-width="3"/>
+            <rect x="398" y="113" width="126" height="126" rx="4" fill="#FFFFFF" stroke="#142b24" stroke-width="2"/>
+            <path d="m422 174 19 19 48-48" fill="none" stroke="#142b24" stroke-width="4"/>
+            <text x="112" y="287" text-anchor="middle" fill="#142b24" font-size="22" font-weight="600">Catalog</text>
+            <text x="282" y="287" text-anchor="middle" fill="#142b24" font-size="22" font-weight="600">Checkout</text>
+            <text x="461" y="287" text-anchor="middle" fill="#142b24" font-size="22" font-weight="600">Orders</text>
+          </svg>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-dark">
-    <span class="ghost" aria-hidden="true">Storefronts</span>
-    <div class="container prose">
-      <span class="overline">Contact</span>
-      <h2 class="h2">What do you sell?</h2>
-      <p class="body-lg">Tell me your sources and goal. Reply within one business day.</p>
-      <a class="btn btn-invert btn-lg" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project <span class="arr">&rarr;</span></a>
-      <p class="cta-contact"><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a></p>
+  <section class="section" id="build">
+    <div class="container">
+      <div class="section-intro"><span class="eyebrow">What I build</span><h2>Ready to sell.<br>Ready to run.</h2></div>
+      <div class="deliverable-list">
+        <article class="deliverable"><span class="item-number">01</span><h3>Your storefront</h3><p>Product pages, collections, cart, and checkout, built for phones.</p></article>
+        <article class="deliverable"><span class="item-number">02</span><h3>Catalog migration</h3><p>Listings, variants, prices, and photos moved from Etsy or eBay into one clean catalog.</p></article>
+        <article class="deliverable"><span class="item-number">03</span><h3>Operations and reporting</h3><p>Payments, tax, shipping, order alerts, and a weekly report on product performance.</p></article>
+        <article class="deliverable" id="own"><span class="item-number">04</span><h3>A documented handoff</h3><p>Your domain, code, product data, and customer list, with a short runbook. No monthly fee to me.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-panel">
+    <div class="container">
+      <div class="cta-grid">
+        <div>
+          <span class="eyebrow">Start a conversation</span>
+          <h2>What do you sell?</h2>
+        </div>
+        <div>
+          <p>Tell me your sources and goal. I'll reply within one business day.</p>
+          <a class="btn btn-primary" href="mailto:christian.g.callahan@cgclabs.org?subject=Storefront%20inquiry&amp;body=Sources%3A%0D%0A%0D%0AGoal%3A%0D%0A%0D%0ATimeline%3A%0D%0A">Email your project <span aria-hidden="true">&rarr;</span></a>
+          <p class="cta-contact"><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a></p>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -199,7 +208,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="/" aria-label="CGC Labs, home"><b>CGC</b><i>Labs</i></a>
+        <a class="logo" href="/" aria-label="CGC Labs, home"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 4h12v10H3zm14 14h12v10H17z" fill="currentColor"/><path d="M9 14v9h8M15 9h9v9" fill="none" stroke="currentColor" stroke-width="3"/></svg><span>cgc labs</span></a>
         <p class="footer-tag">Data engineering for organizations of every size.</p>
         <p class="footer-contact"><a href="mailto:christian.g.callahan@cgclabs.org">christian.g.callahan@cgclabs.org</a><br>Reply within one business day.</p>
       </div>
@@ -226,7 +235,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=20261021-1"></script>
-<script src="assets/bg.js?v=1"></script>
+<script src="assets/site.js?v=20261022-1"></script>
 </body>
 </html>

@@ -243,10 +243,11 @@ for (const file of pages) {
     assert.match(drawer, /\baria-hidden="true"/);
     assert.match(drawer, /\brole="dialog"/);
     assert.doesNotMatch(html, /Book a call|message sent|call booked|booking confirmed/i);
-    const inquiryLinks = [...html.matchAll(/href="(mailto:[^"]+\?subject=[^"]+)"/g)];
+    const inquiryLinks = [...html.matchAll(/href="(mailto:[^"]+)"/g)]
+      .map(([, raw]) => new URL(raw.replaceAll("&amp;", "&")))
+      .filter((url) => url.searchParams.has("subject"));
     assert.ok(inquiryLinks.length >= 2, `${file}: contextual inquiry links missing`);
-    for (const [, raw] of inquiryLinks) {
-      const url = new URL(raw.replaceAll("&amp;", "&"));
+    for (const url of inquiryLinks) {
       assert.equal(url.pathname, "christian.g.callahan@cgclabs.org");
       assert.ok(url.searchParams.get("subject"));
       const body = url.searchParams.get("body");

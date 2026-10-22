@@ -103,3 +103,13 @@ Review files are in `../tmp/seo-site-review/`: 18 viewport screenshots, responsi
 The old homepage counter-equality check was updated for the approved removal of the zero-deadlines hero tile. The underlying proof and all counters on the experience page remain intact.
 
 Verification artifacts: `../tmp/ux-fixes-2026-10-21/`, including 18 viewport screenshots, native interaction results, contrast observations, and production responses. Live checks caught an initial-focus timing issue from a visibility transition; the redundant visibility transition was removed, and native initial focus was rechecked successfully. Initial inert markup still hides closed controls from keyboard and assistive navigation. Reduced-motion emulation, email sending/delivery, and universal sub-400ms performance were not tested; no such completion claims are made.
+
+
+## Engineering studio rebuild (2026-10-22)
+- [x] Read supplied resource; review references and create DESIGN.md.
+- [x] Rebuild all six pages with a shared visual system and native workflow artwork.
+- [x] Preserve positioning, proof, pricing, anchors, SEO, and email contracts.
+- [x] Remove count-up and particle effects; respect reduced-motion CSS.
+- [x] Pass 32 UI/SEO checks, JavaScript syntax, copy checks, and diff review.
+- [x] Inspect all six pages at 375, 768, and 1280px; check native menu focus and close paths.
+- [ ] Push, merge, and verify production against the exact source revision.

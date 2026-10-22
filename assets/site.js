@@ -1,8 +1,6 @@
-/* CGC Labs site: mobile drawer, nav scroll state, metric count-up. */
+/* CGC Labs site: mobile drawer and nav scroll state. */
 (function () {
   "use strict";
-
-  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* Nav solid after 80px scroll */
   var nav = document.querySelector(".nav");
@@ -100,34 +98,4 @@
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  /* Metric count-up: DOM holds the final value; display animates once, on first view. */
-  var metrics = document.querySelectorAll("[data-count-to]");
-  metrics.forEach(function (el) {
-    var finalText = el.textContent;
-    var target = parseFloat(el.getAttribute("data-count-to"));
-    var prefix = el.getAttribute("data-count-prefix") || "";
-    var suffix = el.getAttribute("data-count-suffix") || "";
-    if (reduceMotion || isNaN(target)) return;
-
-    var started = false;
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting || started) return;
-        started = true;
-        var t0 = null;
-        var duration = 800;
-        var step = function (ts) {
-          if (t0 === null) t0 = ts;
-          var p = Math.min((ts - t0) / duration, 1);
-          var eased = 1 - Math.pow(1 - p, 3);
-          var value = target * eased;
-          el.textContent = prefix + Math.round(value) + suffix;
-          if (p < 1) requestAnimationFrame(step);
-          else el.textContent = finalText;
-        };
-        requestAnimationFrame(step);
-      });
-    }, { threshold: 0.4 });
-    io.observe(el);
-  });
 })();

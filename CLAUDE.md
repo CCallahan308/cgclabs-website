@@ -3,23 +3,22 @@
 Static multi-page site for CGC Labs (intended to publish at cgclabs.org). Plain HTML + one CSS file + one small JS file. No build step, no dependencies.
 
 ## Current positioning (2026-10-20)
-Data engineering for organizations of every size is the primary offer. Business analytics and storefront websites are secondary. Healthcare references describe verified prior work only; they do not define the audience. This user direction supersedes older healthcare positioning. Preserve the compact design and copy.
+Data engineering for organizations of every size is the primary offer. Business analytics and storefront websites are secondary. Healthcare references describe verified prior work only; they do not define the audience. This user direction supersedes older healthcare positioning. Preserve compact copy. The October 22 user request authorizes a full UI rebuild; DESIGN.md and STYLE.md supersede earlier visual rules.
 
 ## Read first
 The library-level rules apply here in full: `../CLAUDE.md` (non-negotiables, brand voice, method lexicon) and `../02 - Brand and Web/Website Theme Bible.md` (design tokens, components, copy bank). This file only adds project-local conventions.
 
 ## Files
 - `index.html`, `analytics.html`, `website.html`, `data-engineering.html`: pages
-- `assets/style.css`: all design tokens and components (mirror of Theme Bible section 3)
-- `assets/site.js`: mobile nav drawer, nav solid-on-scroll, metric count-up
-- `assets/bg.js`: living ledger background (drifting dot field, hairline connections, pointer repulsion; static frame under prefers-reduced-motion; see DECISIONS.md #14)
+- `assets/style.css`: all current design tokens and components; see DESIGN.md
+- `assets/site.js`: mobile nav drawer and nav scroll state
 - `assets/favicon.svg`
 
 ## Conventions
 - Copy: first person, founder-voiced, short sentences. No hype words, no emojis, no em dashes in any new copy.
 - Verified proof points only (see `../CLAUDE.md` #4). Prior employer stays "a rural Critical Access Hospital in the Midwestern US."
 - Prices: only the locked numbers on `analytics.html` ($8,500 diagnostic, $15,000/mo). No prices on other pages.
-- Sharp corners (2-6px), numbers in JetBrains Mono with tabular figures. One full-bleed Brick CTA band per page (the closing wall) is the sanctioned Brick fill; otherwise Brick stays an emphasis ink.
+- Follow DESIGN.md: Cabinet Grotesk and General Sans, forest ink, bright neutrals, lime contact panel, native workflow schematics, and restrained motion.
 
 ## Commands
 - Preview: `vercel dev --listen 8000` in this folder, which handles the clean routes in `vercel.json`.

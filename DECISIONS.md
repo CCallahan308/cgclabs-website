@@ -30,3 +30,10 @@
 18. **Search metadata and crawl discovery (2026-10-20).** Canonical, social, internal, and sitemap URLs use the existing Vercel clean routes. Added organization, website, page, service, and breadcrumb structured data, a crawlable monogram logo, robots.txt, and a six-page sitemap. Search Console verification and submission remain an owner setup step. Corrected a proposed MeasureMap definition link that returned 404 to its existing product section.
 
 19. **UX review fixes (2026-10-21).** Replace the booking label with an email action that includes project prompts, reply timing, and a visible fallback address. Keep two prior-work metrics in the homepage hero; detailed healthcare evidence stays on the experience page. The menu is an initially inert dialog that isolates the background, contains focus, restores focus and prior state when closed, and closes safely at the desktop breakpoint. Use light focus outlines on dark sections and darker reassurance text on Paper. Preserve the compact visual design, existing claims, and analytics prices. Add dependency-free behavioral regression tests.
+
+
+## Engineering studio rebuild (2026-10-22)
+
+The founder-led introduction now identifies Christian Callahan. This supersedes the earlier no-operator-name visual choice.
+
+The user requested a complete modern UI rebuild using the supplied premium-site resource. DESIGN.md and STYLE.md supersede earlier paper, serif, Brick, count-up, and particle-field visual decisions. The replacement uses forest ink, bright neutrals, lime accents, Fontshare typography, and native service workflow schematics. All six routes, original bookmarks, verified proof, locked analytics terms, SEO graphs, and email inquiries remain. Fontshare API delivery replaces Google Fonts; the legal pages reflect the provider change. Font files are not redistributed in the public repository.

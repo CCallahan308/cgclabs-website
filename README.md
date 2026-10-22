@@ -7,8 +7,8 @@ Static multi-page site. Data engineering for organizations of every size is the 
 - `analytics.html`: business analytics: dashboards, metric governance, verified prior-work examples, subcontract work, locked pricing.
 - `website.html`: storefronts for independent retailers leaving Etsy and eBay.
 - `data-engineering.html`: legacy data extraction, quality checks, datasets for analytics and ML/AI, scheduled pipelines, lineage, and handoff.
-- `assets/style.css`: design tokens and components (mirrors `../02 - Brand and Web/Website Theme Bible.md`).
-- `assets/site.js`: mobile drawer, nav scroll state, metric count-up.
+- `assets/style.css`: design tokens and components from DESIGN.md.
+- `assets/site.js`: mobile drawer and nav scroll state.
 
 ## Preview
 Run `vercel dev --listen 8000` here and visit http://localhost:8000. Use Vercel's clean URL handling when testing navigation; a plain file server does not resolve the extensionless service routes.
@@ -53,3 +53,9 @@ The mobile menu hides closed controls from interaction, contains focus while ope
 ## To fill later
 - Optional scheduling integration if direct booking replaces the current email inquiry.
 - OG image for social previews
+
+## Engineering studio rebuild (2026-10-22)
+
+All six public pages use a new visual system: Cabinet Grotesk / General Sans, forest ink, bright neutrals, lime, and custom workflow diagrams. Layouts, navigation identity, service presentation, legal pages, and contact panels were rebuilt. Numbers remain static; the decorative particle background was removed. The phone and tablet homepage use a legible vertical routing diagram.
+
+The rebuild preserves clean routes, search metadata and schema, existing bookmarks, verified historical proof, locked analytics terms, and email inquiry prompts. Fontshare replaces Google Fonts; privacy and cookie copy reflect it. See DESIGN.md for references and design decisions. All 32 source tests passed; browser checks covered six pages at 375, 768, and 1280px, with native menu/focus checks. Screen-reader operation, email delivery, and search rankings were not tested.
